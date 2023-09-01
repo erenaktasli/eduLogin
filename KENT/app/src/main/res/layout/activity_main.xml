@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tW1"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKayıt" />
+
+    <EditText
+        android:id="@+id/eTNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/eTAdı"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eTAdı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/eTSoyadı"
+        app:layout_constraintStart_toStartOf="@+id/eTNo"
+        app:layout_constraintTop_toBottomOf="@+id/eTNo" />
+
+    <EditText
+        android:id="@+id/eTSoyadı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKayıt"
+        app:layout_constraintStart_toStartOf="@+id/eTAdı"
+        app:layout_constraintTop_toBottomOf="@+id/eTAdı" />
+
+    <Button
+        android:id="@+id/buttonKayıt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="37dp"
+        android:text="KAYIT"
+        app:layout_constraintBottom_toTopOf="@+id/tW1"
+        app:layout_constraintEnd_toEndOf="@+id/eTSoyadı"
+        app:layout_constraintTop_toBottomOf="@+id/eTSoyadı" />
+</androidx.constraintlayout.widget.ConstraintLayout>
